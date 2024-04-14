@@ -1,0 +1,19 @@
+// Define uma lista com os nomes dos parâmetros UTM que você deseja verificar.
+const utmParams = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content'];
+
+// Itera sobre cada um dos parâmetros UTM especificados.
+utmParams.forEach(param => {
+  // Busca por um elemento 'label' cujo texto interno corresponde exatamente ao nome do parâmetro UTM.
+  var label = Array.from(document.querySelectorAll("label")).find(label => label.textContent.trim() === param);
+
+  // Verifica se encontrou o label e se existe um controle de entrada associado a esse label.
+  if (label && label.control) {
+    // Obtém o valor do campo de entrada associado ao label encontrado.
+    var utmValue = label.control.value;
+    // Exibe no console o nome do parâmetro UTM e o valor encontrado.
+    console.log(`Valor de ${param}:`, utmValue);
+  } else {
+    // Se o label não foi encontrado ou não possui um controle de entrada associado, exibe uma mensagem de erro no console.
+    console.log(`Campo ${param} não encontrado.`);
+  }
+});
