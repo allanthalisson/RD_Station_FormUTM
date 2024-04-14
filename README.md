@@ -29,7 +29,7 @@ Salve todas as alterações e publique a Landing Page.
 ## 4. Testando o script
 Acesse a url de sua landing page inserindo alguns caracteres de utm como teste. Por exemplo: https://suapagina/?utm_source=google&utm_medium=cpc&utm_campaign=campanha_01&utm_content=ad_01
 
-Após a página ser carregada, confira se os campos de utm do formúlario estão ocultos. Abra o console de navegador (Ctrl + Shft + I), vá até a aba Console e cole o código em [Console Verify](https://github.com/allanthalisson/tracking_utm/blob/f3a8e1b21fc3af1ae67ab0ffa80dd61fb2509714/console_verify). Após colar o código, aperte enter.
+Após a página ser carregada, confira se os campos de utm do formúlario estão ocultos. Abra o console de navegador (Ctrl + Shft + I), vá até a aba Console e cole o código presente em [Console Verify](https://github.com/allanthalisson/tracking_utm/blob/f3a8e1b21fc3af1ae67ab0ffa80dd61fb2509714/console_verify). Após colar o código, aperte enter.
 
 O console deverá retornar algo do tipo:
 
