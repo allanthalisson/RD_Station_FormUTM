@@ -1,0 +1,24 @@
+<script type="text/javascript">
+document.addEventListener("DOMContentLoaded", function() {
+  // Função para capturar o valor de um parâmetro específico na URL
+  function getURLParameter(name) {
+    return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search) || [null, ''])[1].replace(/\+/g, '%20')) || null;
+  }
+
+  // Lista dos parâmetros UTM que desejamos capturar
+  const utmParams = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content'];
+
+  utmParams.forEach(param => {
+    var label = Array.from(document.querySelectorAll("label")).find(label => label.textContent.trim() === param);
+    if (label && label.control) {
+      label.control.parentNode.style.display = 'none'; // Oculta a div que contém o campo
+
+      var utmValue = getURLParameter(param); // Captura o valor do parâmetro na URL
+
+      if (utmValue) {
+        label.control.value = utmValue; // Insere o valor no campo correspondente
+      }
+    }
+  });
+});
+</script>
