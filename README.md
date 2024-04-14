@@ -7,9 +7,10 @@ Este projeto apresenta uma solução para a falta de visibilidade de informaçõ
 A primeira coisa que você precisará fazer é criar os campos personalizados no RD Station. No menu Converter > Campos Personalizados você precisará criar os campos: utm_source, utm_medium, utm_campaign e utm_content. *Lembre-se de manter a nomenclatura conforme descrito aqui.*
 
 *_Exemplo de configuração:_*
-Nome do campo: utm_campaign
-Enunciado do campo: utm_campaign
-Tipo de campo: Campo aberto - Texto
+
+> Nome do campo: utm_campaign
+> Enunciado do campo: utm_campaign
+> Tipo de campo: Campo aberto - Texto
 
 ## 2. Inserindo os campos no formulário
 Após criar os campos, insira-os no formulário e, por enquanto, não se preocupe se eles ficarão visíveis.
