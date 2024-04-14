@@ -9,7 +9,9 @@ A primeira coisa que você precisará fazer é criar os campos personalizados no
 *_Exemplo de configuração:_*
 
 > Nome do campo: utm_campaign
+> 
 > Enunciado do campo: utm_campaign
+> 
 > Tipo de campo: Campo aberto - Texto
 
 ## 2. Inserindo os campos no formulário
